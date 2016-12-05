@@ -1,0 +1,11 @@
+todo
+
+Funktionen im Pflichtenheft: Parsen und Ausführen der Schwierigkeitsoption angeben.
+
+F120 ist ueberfluessig (zum Teil), da die Anzahl ganz am Anfang schon mit "-c" behandelt wird.
+Das Vergleichen der bereits vorhandenen Sudokus ist aber neu und sollte dann verschmolzen werden.
+
+Fehler korrigieren.
+
+F50 muss spezifiziert werden (die Option ist nun "-o" fuer "Ort").
+

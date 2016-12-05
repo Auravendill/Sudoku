@@ -1,0 +1,12 @@
+Sudoku-Regeln
+
+Ein Raetsel besteht aus 3x3 Bloecken mit wiederum 3X3 Feldern.
+In den Feldern stehen Zahlen von 1 bis 9.
+Dabei muessen in jedem Block, in jeder Zeile (von 9 Feldern)
+und in jeder Spalte (von 9 Feldern) jeweils alle Zahlen einmal vorkommen.
+Je nach Schwierigkeitsgrad werden beim Erstellen eines Raetsels
+verschiedene viele Felder freigelassen.
+Ziel des Spiels ist es, die Felder so zu fuellen, dass alle Regeln erfuellt sind.
+Dabei gibt es jeweils nur eine korrekte Loesung.
+
+Viel Spass:)
