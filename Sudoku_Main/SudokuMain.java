@@ -1,6 +1,10 @@
 // Kompletter Beispielbefehl fuer Eingabe-Test in der Kommandozeile:
 // -c10 -l3 -oLokalesVerzeichnis -h -s -dStandarddrucker -f
 
+// javac -cp \* SudokuMain.java CreateP.java Sudoku.java
+//java -cp .:\* SudokuMain -c5
+
+
 // Optionen der Kommandozeileneingabe:
 	// -c: Anzahl der Sudokus
 	// -l: Schwierigkeitsstufe
@@ -203,7 +207,7 @@ public class SudokuMain {
 
 			// Dazu statt "cnt" (5 Zeilen hier drueber) eine Zahl eingeben
 			for(Sudoku s : list) {
-				System.out.println(s.toString() + "\n\n");
+				System.out.println(s.toString());
 			}
 
 // Ende von: DEBUGGING: sind die Sudokus korrekt gefuellt worden?
@@ -221,11 +225,25 @@ public class SudokuMain {
 // ============================================================================
 
 
+// ============================================================================
+
+// Eventuell Methode umschreiben, und Level mit uebergeben?
+
+// Ende von: Eventuell Methode umschreiben, und Level mit uebergeben?
+
+// ============================================================================
+
 
 // ============================================================================
 
 // Code fuer die Ausgabe der Sudokus als pdf
-
+            try{
+                CreateP.createPdf("Sudoku1.pdf", list);
+            }
+            catch(Exception e)
+            {
+                System.out.println("Could not create Sudoku-PDF !!!");
+            }
 // Ende von: Code fuer die Ausgabe der Sudokus als pdf
 
 // ============================================================================
@@ -254,8 +272,8 @@ public class SudokuMain {
 
 // Ende von: Weder Hilfe noch Regeln sollen ausgegeben werden: Sudokus erstellen
 
-// ============================================================================		
-// ============================================================================		
+// ============================================================================
+// ============================================================================
 
 
 // ============================================================================
@@ -279,15 +297,15 @@ public class SudokuMain {
 // ============================================================================
 
 // Test fuer die Ausgabe eines geloesten Sudokus
-		
+
 		/*
-		
+
 		Sudoku sud_1 = new Sudoku();
 		Solver test = new SolverEasy();
 		System.out.println("Solvable: "+test.solvable(sud_1));
 		System.out.println("\nOriginal:\n" + sud_1 + "\n\n");
-		
-		*/				
+
+		*/
 
 // Ende von: Test fuer die Ausgabe eines geloesten Sudokus
 
@@ -298,12 +316,12 @@ public class SudokuMain {
 
 // Test fuer die Ausgabe eines gefuellten Sudokus
 
-		
-    /*
+		/*
+
 		Sudoku sud_1 = new Sudoku();
     System.out.println("\n" + sud_1.toString() + "\n\n");
 
-	*/
+		*/
 
 // Ende von: Test fuer die Ausgabe eines gefuellten Sudokus
 
