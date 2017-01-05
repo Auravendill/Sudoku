@@ -1,2 +1,3 @@
- javac -cp \* SudokuMain.java CreateP.java Sudoku.java
+javac -cp \* SudokuMain.java CreateP.java Sudoku.java SolverEasy.java Tester.java ParseException.java Solver.java
+
 java -cp .:\* SudokuMain -c10
