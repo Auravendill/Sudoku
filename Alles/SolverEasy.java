@@ -4,7 +4,7 @@ public class SolverEasy extends Solver {
 
 	public SolverEasy() {
 		super();
-		System.out.println("Difficulty set to easy");
+		System.out.println("Difficulty set to easy/medium");
 	}
 
 	public boolean solvable(Sudoku s) {
@@ -23,7 +23,6 @@ public class SolverEasy extends Solver {
 				}
 			}
 		}
-		System.out.println("Solved"+sc);
 		return sc.isSolved();
 	}
 
@@ -36,8 +35,8 @@ public class SolverEasy extends Solver {
 			int temp = s.getAt(line, i);
 			sum += temp;
 			if (temp == 0) {
-				if (foundColumn > -1) {
-					return true;// true = something changed
+				if (foundColumn > -1) {// more than one empty field
+					return false;// false = could not solve
 				}
 				foundColumn = i;
 			}
@@ -59,8 +58,8 @@ public class SolverEasy extends Solver {
 			int temp = s.getAt(i, column);
 			sum += temp;
 			if (temp == 0) {
-				if (foundLine > -1) {
-					return true;// true = something changed
+				if (foundLine > -1) {// more than one empty field
+					return false;// false = could not solve
 				}
 				foundLine = i;
 			}

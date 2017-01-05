@@ -219,6 +219,15 @@ public class Sudoku { // class body
 		}
 	}
 
+	public void copy(Sudoku s) { // Copy
+		mtx = new int[9][9];
+		for (int i = 0; i < 9; i++) {
+			for (int j = 0; j < 9; j++) {
+				mtx[i][j] = s.getAt(i, j);
+			}
+		}
+	}
+
 	public boolean isSolved() {// 0 = leeres Feld (wegen Integer)
 		for (int i = 0; i < 9; i++) {
 			for (int j = 0; j < 9; j++) {
@@ -241,7 +250,11 @@ public class Sudoku { // class body
 			for (int j = 0; j < 9; j++) { // iterate over all columns
 				if ((j == 3) || (j == 6))
 					str.append(" "); // empty column all three rows
-				str.append(mtx[i][j]); // insert value of the matrix
+				if (mtx[i][j] == 0) {
+					str.append(' ');
+				} else {
+					str.append(mtx[i][j]); // insert value of the matrix
+				}
 				if (j != 8)
 					str.append(" "); // no blank at end of row
 			} // loop over columns finished
@@ -255,6 +268,16 @@ public class Sudoku { // class body
 
 	public void setAt(int x, int y, int wert) {
 		this.mtx[x][y] = wert;
+	}
+
+	public void deleteRandom() {
+		int x = (int) (Math.random() * 9); // random numbers (0-8)
+		int y = (int) (Math.random() * 9);
+		if (this.getAt(x, y) == 0) {
+			deleteRandom();
+		} else {
+			this.setAt(x, y, 0);
+		}
 	}
 
 } // end of code

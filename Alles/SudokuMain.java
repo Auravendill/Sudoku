@@ -219,6 +219,25 @@ public class SudokuMain {
 
 // Code fuer die Reduktion auf die Schwierigkeitsstufe
 
+			if (lvl == 1 || lvl == 2) {
+				int emptyC = 13 +(lvl-1)*4;// Empty-Count -> Anzahl leerer Felder
+				Solver solv = new SolverEasy();
+				for (Sudoku s : list) {
+					Sudoku cs = new Sudoku(s);
+					for (int i = 0; i < emptyC; i++) {
+						while (true) {
+							cs.deleteRandom();
+							if (solv.solvable(cs)) {
+								s.copy(cs);
+								break;
+							} else {
+								cs.copy(s);
+							}
+						}
+					}
+					System.out.println(s);
+				}
+			}
 
 // Ende von: Code fuer die Reduktion auf die Schwierigkeitsstufe
 
