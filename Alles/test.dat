@@ -1,0 +1,1000 @@
+ 1008  cd ..
+ 1009  cd grc/
+ 1010  atom *.xml
+ 1011  cd
+ 1012  cd EttusN200/
+ 1013  gr_modtool newmod plot_own_file
+ 1014  cd gr-plot_own_file/
+ 1015  gr_modtool add -t sync -l python
+ 1016  cd python
+ 1017  ls
+ 1018  atom plot_own_file.py 
+ 1019  cd ..
+ 1020  cd grc/
+ 1021  atom *.xml
+ 1022  cd ..
+ 1023  cd --
+ 1024  cd EttusN200/gr-save_input/
+ 1025  ~/build.sh
+ 1026  cd ..
+ 1027  cd gr-plot_own_file/
+ 1028  ~/build.sh
+ 1029  cd .
+ 1030  cd ..
+ 1031  cd gr-save_input/
+ 1032  ~/build.sh
+ 1033  cd ..
+ 1034  cd zea2git/
+ 1035  cd NMR/DataSoftware/
+ 1036  git status
+ 1037  ls
+ 1038  git pull
+ 1039  ls
+ 1040  cd mars_gnuradio/
+ 1041  cp -r ~/EttusN200/gr-save_input/ ./
+ 1042  ls
+ 1043  git add gr-save_input
+ 1044  git commit -m "Block zum Abspeichern der Aufnahmedaten aus einer Binärdatei in eine lesbare Datei mit der Endung .dat" gr-save_input/
+ 1045  git push
+ 1046  ls
+ 1047  atom modulebuild.sh 
+ 1048  git add modulebuild.sh 
+ 1049  git commit -m "Anpassung des Skriptes, damit der neue block auch gebuilded wird" modulebuild.sh 
+ 1050  git push
+ 1051  ls
+ 1052  gnuradio-companion plot.grc 
+ 1053  git add plot.grc 
+ 1054  git commit -m "Einfuegen des save_input-Blockes in den Flowgraph und hinzufuegen der Variable filename" plot.grc 
+ 1055  git push
+ 1056  sudo apt-get install sciebo
+ 1057  lsb_release -a 
+ 1058  sudo sh -c "echo 'deb http://download.opensuse.org/repositories/isv:/ownCloud:/desktop/Ubuntu_15.10/ /' > /etc/apt/sources.list.d/owncloud-client.list"
+ 1059  sudo apt-get update
+ 1060  sudo apt-get install owncloud-client
+ 1061  ls
+ 1062  sciebo
+ 1063  sudo sh -c "echo 'deb http://download.opensuse.org/repositories/isv:/ownCloud:/desktop/Ubuntu_15.10/ /' > /etc/apt/sources.list.d/owncloud-client.list"
+ 1064  sudo apt-get update
+ 1065  sudo apt-get install owncloud-client
+ 1066  ls
+ 1067  mail -s"Testmail" d.hoven@fz-juelich.de
+ 1068  sudo apt-get install mailutils
+ 1069  mail -s"Testmail" d.hoven@fz-juelich.de
+ 1070  cd op
+ 1071  cd /opt
+ 1072  ls
+ 1073  cd gnuradio/
+ 1074  ls
+ 1075  cd include/
+ 1076  ls
+ 1077  find -name "Tagged"
+ 1078  find -n "Tagged"
+ 1079  ls
+ 1080  rm -rf preparation/
+ 1081  cd gnuradio/
+ 1082  ls
+ 1083  cd messages/
+ 1084  ls
+ 1085  cd ..
+ 1086  ls
+ 1087  cd etc/
+ 1088  ls
+ 1089  cd gnuradio/
+ 1090  ls
+ 1091  cd ..
+ 1092  cd bin/
+ 1093  ls
+ 1094  cd ..
+ 1095  ls
+ 1096  cd lib
+ 1097  ls
+ 1098  cd Schreibtisch/hoffmann/projects/accounting.orig/application/
+ 1099  ls
+ 1100  cd accounting/
+ 1101  clear
+ 1102  ls
+ 1103  nano Accounting.java 
+ 1104  celar
+ 1105  clear
+ 1106  atom Accounting.java 
+ 1107  atom AccountingEntry.java 
+ 1108  atom Depositor.java 
+ 1109  cd ..
+ 1110  cd data/
+ 1111  atom test.csv
+ 1112  cd ..
+ 1113  cd application/accounting/
+ 1114  javac *.java
+ 1115  ls
+ 1116  java Accounting < ../../data/test.csv
+ 1117  cd .
+ 1118  cd .. 
+ 1119  cd ..
+ 1120  java application.accounting.Accounting < ../../data/test.csv
+ 1121  java application.accounting.Accounting < ./data/test.csv
+ 1122  javac ./application/accounting/*.java
+ 1123  java application.accounting.Accounting < ./data/test.csv
+ 1124  java application.accounting.Accounting < ./data/test.csv > ./data/test.csv.new
+ 1125  javac ./application/accounting/*.java
+ 1126  java application.accounting.Accounting < ./data/test.csv > ./data/test.csv.new
+ 1127  java application.accounting.Accounting < ./data/test.in > ./data/test.csv.new
+ 1128  cd ..
+ 1129  cd projects/accounting.orig/data/
+ 1130  touch test.in
+ 1131  atom test.in
+ 1132  cd ..
+ 1133  java application.accounting.Accounting < ./data/test.in > ./data/test.csv.new
+ 1134  javac ./application/accounting/*.java
+ 1135  java application.accounting.Accounting < ./data/test.in > ./data/test.csv.new
+ 1136  javac ./application/accounting/*.java
+ 1137  java application.accounting.Accounting < ./data/test.in > ./data/test.csv.new
+ 1138  javac ./application/accounting/*.java
+ 1139  java application.accounting.Accounting < ./data/test.in > ./data/test.csv.new
+ 1140  javac ./application/accounting/*.java
+ 1141  java application.accounting.Accounting < ./data/test.in > ./data/test.csv.new
+ 1142  javac ./application/accounting/*.java
+ 1143  java application.accounting.Accounting < ./data/test.in > ./data/test.csv.new
+ 1144  javac ./application/accounting/*.java
+ 1145  java application.accounting.Accounting < ./data/test.in > ./data/test.csv.new
+ 1146  javac ./application/accounting/*.java
+ 1147  java application.accounting.Accounting < ./data/test.in > ./data/test.csv.new
+ 1148  javac ./application/accounting/*.java
+ 1149  java application.accounting.Accounting < ./data/test.in > ./data/test.csv.new
+ 1150  javac ./application/accounting/*.java
+ 1151  java application.accounting.Accounting < ./data/test.in > ./data/test.csv.new
+ 1152  javac ./application/accounting/*.java
+ 1153  java application.accounting.Accounting < ./data/test.in > ./data/test.csv.new
+ 1154  javac ./application/accounting/*.java
+ 1155  java application.accounting.Accounting < ./data/test.in > ./data/test.csv.new
+ 1156  cd data/
+ 1157  pwd
+ 1158  cd ..
+ 1159  javac ./application/accounting/*.java
+ 1160  java application.accounting.Accounting < ./data/test.in > ./data/test.csv.new
+ 1161  javac ./application/accounting/*.java
+ 1162  java application.accounting.Accounting < ./data/test.in > ./data/test.csv.new
+ 1163  javac ./application/accounting/*.java
+ 1164  java application.accounting.Accounting < ./data/test.in > ./data/test.csv.new
+ 1165  javac ./application/accounting/*.java
+ 1166  java application.accounting.Accounting < ./data/test.in > ./data/test.csv.new
+ 1167  javac ./application/accounting/*.java
+ 1168  java application.accounting.Accounting < ./data/test.in > ./data/test.csv.new
+ 1169  javac ./application/accounting/*.java
+ 1170  java application.accounting.Accounting < ./data/test.in > ./data/test.csv.new
+ 1171  javac ./application/accounting/*.java
+ 1172  java application.accounting.Accounting < ./data/test.in > ./data/test.csv.new
+ 1173  javac ./application/accounting/*.java
+ 1174  java application.accounting.Accounting < ./data/test.in > ./data/test.csv.new
+ 1175  javac ./application/accounting/*.java
+ 1176  java application.accounting.Accounting < ./data/test.in > ./data/test.csv.new
+ 1177  javac ./application/accounting/*.java
+ 1178  java application.accounting.Accounting < ./data/test.in > ./data/test.csv.new
+ 1179  javac ./application/accounting/*.java
+ 1180  java application.accounting.Accounting < ./data/test.in > ./data/test.csv.new
+ 1181  javac ./application/accounting/*.java
+ 1182  java application.accounting.Accounting < ./data/test.in > ./data/test.csv.new
+ 1183  javac ./application/accounting/*.java
+ 1184  java application.accounting.Accounting < ./data/test.in > ./data/test.csv.new
+ 1185  javac ./application/accounting/*.java
+ 1186  java application.accounting.Accounting < ./data/test.in > ./data/test.csv.new
+ 1187  javac ./application/accounting/*.java
+ 1188  java application.accounting.Accounting < ./data/test.in > ./data/test.csv.new
+ 1189  javac ./application/accounting/*.java
+ 1190  java application.accounting.Accounting < ./data/test.in > ./data/test.csv.new
+ 1191  javac ./application/accounting/*.java
+ 1192  java application.accounting.Accounting < ./data/test.in > ./data/test.csv.new
+ 1193  cd 
+ 1194  cd EttusN200/
+ 1195  ls
+ 1196  cd gr-modules/
+ 1197  gnuradio-companion GuiTestGRC.grc 
+ 1198  cs Schreibtisch/
+ 1199  cd Schreibtisch/
+ 1200  ls
+ 1201  cd hoffmann/
+ 1202  ls
+ 1203  cd projects/
+ 1204  ls
+ 1205  ls ~
+ 1206  cd accounting/src/application/accounting/
+ 1207  atom Accounting.
+ 1208  atom Accounting.java 
+ 1209  atom AccountingEntry.java 
+ 1210  atom Depositor.java 
+ 1211  cd EttusN200/gr-modules
+ 1212  ls
+ 1213  gnuradio-companion GuiTestGRC.grc 
+ 1214  ls -l
+ 1215  gnuradio-companion GuiTestGRC.grc 
+ 1216  python top_block.py | grep Got
+ 1217  ls
+ 1218  cd gr-trigger/
+ 1219  ~/build.sh 
+ 1220  cd ..
+ 1221  python top_block.py | grep Got
+ 1222  cd gr-trigger/
+ 1223  ~/build.sh 
+ 1224  cd ..
+ 1225  python top_block.py | grep Got
+ 1226  gnuradio-companion GuiTestGRC.grc 
+ 1227  cd Schreibtisch/hoffmann/test/
+ 1228  javac *.java
+ 1229  java Accounting
+ 1230  javac *.java
+ 1231  java Accounting
+ 1232  java Accounting < ./test.csv >./test.csv.new
+ 1233  java Accounting < ./test.in >./test.csv.new
+ 1234  java Accounting < ./test.in > ./test.csv.new
+ 1235  java Accounting < test.in > test.csv.new
+ 1236  javac *.java
+ 1237  java Accounting < ./test.in > ./test.csv.new
+ 1238  javac *.java
+ 1239  java Accounting < ./test.in > ./test.csv.new
+ 1240  javac *.java
+ 1241  java Accounting < ./test.in > ./test.csv.new
+ 1242  javac *.java
+ 1243  java Accounting < ./test.in > ./test.csv.new
+ 1244  javac *.java
+ 1245  java Accounting < ./test.in > ./test.csv.new
+ 1246  javac *.java
+ 1247  java Accounting < ./test.in > ./test.csv.new
+ 1248  cd
+ 1249  ls
+ 1250  zea2git/NMR/DataSoftware/
+ 1251  ls
+ 1252  cd zea2git/NMR/DataSoftware/
+ 1253  ls
+ 1254  cd mars_gnuradio/
+ 1255  ls
+ 1256  gnuradio-companion mars.grc 
+ 1257  cd 
+ 1258  cd Schreibtisch/hoffmann/test/
+ 1259  javac *.java
+ 1260  java Accounting < ./test.in > ./test.csv.new
+ 1261  javac *.java
+ 1262  java Accounting < ./test.in > ./test.csv.new
+ 1263  javac *.java
+ 1264  java Accounting < ./test.in > ./test.csv.new
+ 1265  javac *.java
+ 1266  java Accounting < ./test.in > ./test.csv.new
+ 1267  javac *.java
+ 1268  java Accounting < ./test.in > ./test.csv.new
+ 1269  javac *.java
+ 1270  java Accounting < ./test.in > ./test.csv.new
+ 1271  javac *.java
+ 1272  java Accounting < ./test.in > ./test.csv.new
+ 1273  javac *.java
+ 1274  java Accounting < ./test.in > ./test.csv.new
+ 1275  javac *.java
+ 1276  java Accounting < ./test.in > ./test.csv.new
+ 1277  javac *.java
+ 1278  java Accounting < ./test.in > ./test.csv.new
+ 1279  javac *.java
+ 1280  java Accounting < ./test.in > ./test.csv.new
+ 1281  javac *.java
+ 1282  java Accounting < ./test.in > ./test.csv.new
+ 1283  cd ..
+ 1284  ls
+ 1285  cd projects/
+ 1286  git status
+ 1287  ls -l
+ 1288  ls -lisa
+ 1289  tree
+ 1290  sudo apt-get install tree
+ 1291  sudo dpkg --configure -a
+ 1292  sudo apt-get install tree
+ 1293  tree
+ 1294  cd Schreibtisch/hoffmann/
+ 1295  tree
+ 1296  cd projects/accounting.orig/data/
+ 1297  ls
+ 1298  touch README.txt
+ 1299  cd
+ 1300  cd Schreibtisch/hoffmann/projects/accounting/src/testcases/
+ 1301  touch README.txt
+ 1302  cd .
+ 1303  cd
+ 1304  cd Schreibtisch/hoffmann/projects/
+ 1305  wget http://www.fh-aachen.de/fileadmon/people/fb09_j.hoffmann/se/examples/ArgPaser.java.tar.bz2
+ 1306  ls
+ 1307  ls -lAr
+ 1308  cd accounting
+ 1309  ls -lisa
+ 1310  cd ..
+ 1311  atom ./accounting/.gitignore 
+ 1312  "*.tar.bz2" >> ./accounting/.gitignore 
+ 1313  '*.tar.bz2' >> ./accounting/.gitignore 
+ 1314  echo '*.tar.bz2' >> ./accounting/.gitignore 
+ 1315  atom ./accounting/.gitignore 
+ 1316  echo "*.tar.bz2" >> ./accounting/.gitignore 
+ 1317  cd accounting
+ 1318  ls
+ 1319  ls -lisa
+ 1320  . git.sh
+ 1321  git init
+ 1322  ls -lisa
+ 1323  git --help
+ 1324  git rm
+ 1325  git -r
+ 1326  git -r .git
+ 1327  git -r ./.git
+ 1328  git rm -r ./.git
+ 1329  git rm -r .git
+ 1330  git rm -r 
+ 1331  ls
+ 1332  ls -lisa
+ 1333  rm -rf .git
+ 1334  rm -rf .gitignore 
+ 1335  cd
+ 1336  cd Schreibtisch/Studium/C++/
+ 1337  touch Ueb1.1.cpp
+ 1338  atom Ueb1.1.cpp 
+ 1339  g++ Ueb1.1.cpp 
+ 1340  ls
+ 1341  ./a.out 
+ 1342  g++ -o Ueb1-g .1.Ueb.1.1.out Ueb1.1.cpp
+ 1343  g++ -o Ueb.1.1.out Ueb1.1.cpp
+ 1344  ls
+ 1345  rm a.out 
+ 1346  gdb
+ 1347  cd Schreibtisch/Studium/C++/
+ 1348  ls
+ 1349  gdb Ueb.1.1.out 
+ 1350  cd Schreibtisch/Studium/C++/
+ 1351  touch Ueb1.2.cpp
+ 1352  atom Ueb1.2.cpp 
+ 1353  g++ -o Ueb.1.2.out Ueb1.2.cpp
+ 1354  . Ueb.1.2.out 
+ 1355  . ./Ueb.1.2.out 
+ 1356  . Ueb.1.2.out 
+ 1357  g++ -o Ueb.1.2.out Ueb1.2.cpp
+ 1358  . Ueb.1.2.out 
+ 1359  . ./Ueb.1.2.out 
+ 1360  . Ueb.1.1.out 
+ 1361  ./Ueb.1.2.out 
+ 1362  g++ -o Ueb.1.2.out Ueb1.2.cpp
+ 1363  ./Ueb.1.2.out 
+ 1364  g++ -o Ueb.1.2.out Ueb1.2.cpp
+ 1365  ./Ueb.1.2.out 
+ 1366  g++ -o Ueb.1.2.out Ueb1.2.cpp
+ 1367  ./Ueb.1.2.out 
+ 1368  g++ -o Ueb.1.2.out Ueb1.2.cpp
+ 1369  ./Ueb.1.2.out 
+ 1370  g++ -o Ueb.1.2.out Ueb1.2.cpp
+ 1371  ./Ueb.1.2.out 
+ 1372  g++ -o Ueb.1.2.out Ueb1.2.cpp
+ 1373  ./Ueb.1.2.out 
+ 1374  g++ -o Ueb.1.2.out Ueb1.2.cpp
+ 1375  ./Ueb.1.2.out 
+ 1376  g++ -o Ueb.1.2.out Ueb1.2.cpp
+ 1377  ./Ueb.1.2.out 
+ 1378  g++ -o Ueb.1.2.out Ueb1.2.cpp
+ 1379  ./Ueb.1.2.out 
+ 1380  g++ -o Ueb.1.2.out Ueb1.2.cpp
+ 1381  ./Ueb.1.2.out 
+ 1382  g++ -o Ueb.1.2.out Ueb1.2.cpp
+ 1383  ./Ueb.1.2.out 
+ 1384  g++ -o Ueb.1.2.out Ueb1.2.cpp
+ 1385  ./Ueb.1.2.out 
+ 1386  g++ -o Ueb.1.2.out Ueb1.2.cpp
+ 1387  ./Ueb.1.2.out 
+ 1388  g++ -o Ueb.1.2.out Ueb1.2.cpp
+ 1389  ./Ueb.1.2.out 
+ 1390  g++ -o Ueb.1.2.out Ueb1.2.cpp
+ 1391  ./Ueb.1.2.out 
+ 1392  g++ -o Ueb.1.2.out Ueb1.2.cpp
+ 1393  ./Ueb.1.2.out 
+ 1394  g++ -o Ueb.1.2.out Ueb1.2.cpp
+ 1395  ./Ueb.1.2.out 
+ 1396  g++ -o Ueb.1.2.out Ueb1.2.cpp
+ 1397  ./Ueb.1.2.out 
+ 1398  g++ -o Ueb.1.2.out Ueb1.2.cpp
+ 1399  ./Ueb.1.2.out 
+ 1400  g++ -o Ueb.1.2.out Ueb1.2.cpp
+ 1401  ./Ueb.1.2.out 
+ 1402  touch Ueb1.3.cpp
+ 1403  atom Ueb1.3.cpp 
+ 1404  touch Ueb1.3.cpp
+ 1405  ls
+ 1406  g++ -o Ueb.1.3.out Ueb1.3.cpp
+ 1407  ./Ueb.1.3.out 
+ 1408  g++ -o Ueb.1.3.out Ueb1.3.cpp
+ 1409  ./Ueb.1.3.out 
+ 1410  touch Ueb1.4.cpp
+ 1411  atom Ueb1.4.cpp 
+ 1412  g++ -o Ueb.1.4.out Ueb1.4.cpp
+ 1413  atom Ueb1.4.cpp 
+ 1414  ./Ueb.1.4.out 
+ 1415  atom Ueb1.4.cpp 
+ 1416  g++ -o Ueb.1.4.out Ueb1.4.cpp
+ 1417  ./Ueb.1.4.out 
+ 1418  ls
+ 1419  cd EttusN200/
+ 1420  ls
+ 1421  cd gr-modules
+ 1422  ls
+ 1423  gnuradio-companion  GuiTestGRC.grc 
+ 1424  cd gr-trigger/
+ 1425  ls
+ 1426  cd build
+ 1427  ~/build.sh 
+ 1428  cd ..
+ 1429  ~/build.sh 
+ 1430  gnuradio-companion ../GuiTestGRC.grc 
+ 1431  cd ..
+ 1432  gnuradio-companion GuiTestGRC.grc 
+ 1433  cd ..
+ 1434  cd gr-module
+ 1435  cd gr-modules/
+ 1436  gnuradio-companion GuiTestGRC.grc #
+ 1437  gnuradio-companion GuiTestGRC.grc
+ 1438  cd EttusN200/
+ 1439  ls
+ 1440  cd gr-modules
+ 1441  ~/build.sh 
+ 1442  cd gr-trigger/
+ 1443  ~bu
+ 1444  ~/build.sh 
+ 1445  ls
+ 1446  cd Schreibtisch/Studium/C++/Ueb2/
+ 1447  gcc -o Ueb2.1.out Ueb2.1.cpp
+ 1448  g++ Ueb2.1.cpp
+ 1449  ./a.out 
+ 1450  g++ Ueb2.1.cpp
+ 1451  ./a.out 
+ 1452  g++ Ueb2.1.cpp
+ 1453  g++ -o Ueb2.1.out Ueb2.1.cpp
+ 1454  g++ -o Ueb2.2.out Ueb2.2.cpp
+ 1455  ./Ueb2.2.out 
+ 1456  ls
+ 1457  cd Schreibtisch/Studium/C++/Ueb3/
+ 1458  ls
+ 1459  g++ -o Ueb3.4.out Ueb3.4.cpp
+ 1460  ./Ueb3.4.out 
+ 1461  g++ -g -o Ueb3.4.out Ueb3.4.cpp
+ 1462  gdb Ueb3.4.out 
+ 1463  kdbg Ueb3.4.out
+ 1464  gdb
+ 1465  gdb Ueb3.4.out (13+7)*5-(2*3+7)/(-8)
+ 1466  gdb Ueb3.4.out 
+ 1467  nemiver Ueb3.4.
+ 1468  apt-get install nemiver
+ 1469  sudo apt-get install nemiver
+ 1470  nemiver Ueb3.4.out
+ 1471  atom Ueb3.4.cpp
+ 1472  g++ -g -o Ueb3.4.out Ueb3.4.cpp
+ 1473  ./Ueb3.4.out 
+ 1474  g++ -g -o Ueb3.4.out Ueb3.4.cpp
+ 1475  ./Ueb3.4.out 
+ 1476  g++ -g -o Ueb3.4.out Ueb3.4.cpp
+ 1477  ./Ueb3.4.out 
+ 1478  g++ -g -o Ueb3.4.out Ueb3.4.cpp
+ 1479  ./Ueb3.4.out 
+ 1480  g++ -g -o Ueb3.4.out Ueb3.4.cpp
+ 1481  ./Ueb3.4.out 
+ 1482  clear
+ 1483  ./Ueb3.4.out 
+ 1484  g++ -g -o Ueb3.4.out Ueb3.4.cpp
+ 1485  ./Ueb3.4.out 
+ 1486  g++ -g -o Ueb3.4.out Ueb3.4.cpp
+ 1487  ./Ueb3.4.out 
+ 1488  g++ -g -o Ueb3.4.out Ueb3.4.cpp
+ 1489  ./Ueb3.4.out 
+ 1490  g++ -g -o Ueb3.4.out Ueb3.4.cpp
+ 1491  ./Ueb3.4.out 
+ 1492  g++ -g -o Ueb3.4.out Ueb3.4.cpp
+ 1493  ./Ueb3.4.out 
+ 1494  g++ -g -o Ueb3.4.out Ueb3.4.cpp
+ 1495  ./Ueb3.4.out 
+ 1496  g++ -g -o Ueb3.4.out Ueb3.4.cpp
+ 1497  ./Ueb3.4.out 
+ 1498  g++ -g -o Ueb3.4.out Ueb3.4.cpp
+ 1499  ./Ueb3.4.out 
+ 1500  g++ -g -o Ueb3.4.out Ueb3.4.cpp
+ 1501  ./Ueb3.4.out 
+ 1502  g++ -g -o Ueb3.4.out Ueb3.4.cpp
+ 1503  ./Ueb3.4.out 
+ 1504  g++ -g -o Ueb3.4.out Ueb3.4.cpp
+ 1505  ./Ueb3.4.out 
+ 1506  ls
+ 1507  cd EttusN200/
+ 1508  ls
+ 1509  find -name *.grc
+ 1510  find -name ./*.grc
+ 1511  gnuradio-companion test.grc 
+ 1512  cd ..
+ 1513  ls
+ 1514  cd zea2git/
+ 1515  ls
+ 1516  cd NMR/
+ 1517  ls
+ 1518  cd DataSoftware/
+ 1519  ls
+ 1520  cd mars_gnuradio/
+ 1521  ls
+ 1522  gnuradio-companion mars.grc 
+ 1523  cd ..
+ 1524  find -name *.grc
+ 1525  cd TestDH/
+ 1526  gnuradio-companion GuiTestGRC.grc 
+ 1527  ls
+ 1528  cd gr-trigger/
+ 1529  ls
+ 1530  cd python/
+ 1531  ls
+ 1532  atom trigger_py_ff.py 
+ 1533  cd ..
+ 1534  ls
+ 1535  cd ..
+ 1536  cd gr-record/
+ 1537  cd python/
+ 1538  ls
+ 1539  atom record_py_ff.py 
+ 1540  ls
+ 1541  cd EttusN200/
+ 1542  cd ..
+ 1543  cd zea2git/
+ 1544  ls
+ 1545  cd NMR/
+ 1546  ls
+ 1547  cd Gnuradio
+ 1548  ls
+ 1549  cd VorarbeitenMS/
+ 1550  ls
+ 1551  cd ..
+ 1552  cd GnuradioKomponenten/
+ 1553  ls
+ 1554  cd VorarbeitenMS/
+ 1555  ls
+ 1556  cd gr-mblocks/
+ 1557  ls
+ 1558  rm -rf build
+ 1559  mkdir build
+ 1560  cd build
+ 1561  export PKG_CONFIG_PATH=/opt/uhd/lib64/pkgconfig/
+ 1562  cmake -DCMAKE_INSTALL_PREFIX=/opt/gnuradio -DGR_PKG_CONF_DIR=/opt/gnuradio/etc/gnuradio/conf.d -DGR_PREFSDIR=/opt/gnuradio/etc/gnuradio/conf.d -DENABLE_SPHINX=ON -DENABLE_GRC=ON -DENABLE_GR_NOAA=OFF -DENABLE_GR_PAGER=OFF -DENABLE_GR_ATSC=OFF -DENABLE_GR_FEC=OFF -DENABLE_GR_DTV=OFF -DENABLE_GR_TRELLIS=OFF -DENABLE_GR_VOCODER=OFF -DENABLE_GR_FCD=OFF -DENABLE_GR_WAVELET=OFF -DENABLE_GR_UHD=ON -DENABLE_GR_ZEROMQ=ON -DENABLE_GR_VIDEO_SDL=OFF -Wno-dev -DENABLE_GR_COMEDI=OFF -DENABLE_GR_LOG=ON ../
+ 1563  make
+ 1564  sudo make install
+ 1565  cd zea2git/NMR/DataSoftware/
+ 1566  git add ./TestDH
+ 1567  git commit -m ./TestDH "Testordner fuer PMT Messages" ./TestDH
+ 1568  git commit -m "Testordner fuer PMT Messages" ./TestDH
+ 1569  git add mars_gnuradio/
+ 1570  git commit -m "lauffaehiger flowgraph" ./mars_gnuradio/
+ 1571  git push
+ 1572  cd zea2git/
+ 1573  ls
+ 1574  cd NMR/DataSoftware/
+ 1575  ls
+ 1576  git status
+ 1577  git add kerstin.zip 
+ 1578  git commit -m "Trigger und Record fuer Kerstin"
+ 1579  git push
+ 1580  cd TestDH/
+ 1581  ls
+ 1582  gnuradio-companion GuiTestGRC.grc 
+ 1583  ls
+ 1584  cd Schreibtisch/
+ 1585  ls
+ 1586  cd Studium/C++/Ueb4/
+ 1587  g++ -o Ueb4.3.out IntMenge.cpp main.cpp
+ 1588  clear
+ 1589  g++ -o Ueb4.3.out IntMenge.cpp main.cpp
+ 1590  clear
+ 1591  g++ -o Ueb4.3.out IntMenge.cpp main.cpp
+ 1592  clear
+ 1593  g++ -o Ueb4.3.out IntMenge.cpp main.cpp
+ 1594  clear
+ 1595  g++ -o Ueb4.3.out IntMenge.cpp main.cpp
+ 1596  clear
+ 1597  g++ -o Ueb4.3.out IntMenge.cpp main.cpp
+ 1598  clear
+ 1599  g++ -o Ueb4.3.out IntMenge.cpp main.cpp
+ 1600  clear
+ 1601  g++ -o Ueb4.3.out IntMenge.cpp main.cpp
+ 1602  clear
+ 1603  g++ -o Ueb4.3.out IntMenge.cpp main.cpp
+ 1604  clear
+ 1605  g++ -o Ueb4.3.out IntMenge.cpp main.cpp
+ 1606  clear
+ 1607  g++ -o Ueb4.3.out IntMenge.cpp main.cpp
+ 1608  clear
+ 1609  g++ -o Ueb4.3.out IntMenge.cpp main.cpp
+ 1610  clear
+ 1611  g++ -o Ueb4.3.out IntMenge.cpp main.cpp
+ 1612  g++ -std=c++11 -o Ueb4.3.out IntMenge.cpp main.cpp
+ 1613  g++ -o Ueb4.3.out IntMenge.cpp main.cpp
+ 1614  g++ -std=c++11 -o Ueb4.3.out IntMenge.cpp main.cpp
+ 1615  g++ -o Ueb4.3.out IntMenge.cpp main.cpp
+ 1616  ./Ueb4.3.out 
+ 1617  g++ -o Ueb4.3.out IntMenge.cpp main.cpp
+ 1618  ./Ueb4.3.out 
+ 1619  g++ -o Ueb4.3.out IntMenge.cpp main.cpp
+ 1620  ./Ueb4.3.out 
+ 1621  g++ -o Ueb4.3.out IntMenge.cpp main.cpp
+ 1622  ./Ueb4.3.out 
+ 1623  g++ -o Ueb4.3.out IntMenge.cpp main.cpp
+ 1624  ./Ueb4.3.out 
+ 1625  g++ -o Ueb4.3.out IntMenge.cpp main.cpp
+ 1626  ./Ueb4.3.out 
+ 1627  g++ -o Ueb4.3.out IntMenge.cpp main.cpp
+ 1628  ./Ueb4.3.out 
+ 1629  g++ -o Ueb4.3.out IntMenge.cpp main.cpp
+ 1630  ./Ueb4.3.out 
+ 1631  g++ -o Ueb4.3.out IntMenge.cpp main.cpp
+ 1632  ./Ueb4.3.out 
+ 1633  g++ -o Ueb4.3.out IntMenge.cpp main.cpp
+ 1634  ./Ueb4.3.out 
+ 1635  g++ -o Ueb4.3.out IntMenge.cpp main.cpp
+ 1636  ./Ueb4.3.out 
+ 1637  g++ -o Ueb4.3.out IntMenge.cpp main.cpp
+ 1638  ./Ueb4.3.out 
+ 1639  g++ -o Ueb4.3.out IntMenge.cpp main.cpp
+ 1640  ./Ueb4.3.out 
+ 1641  g++ -o Ueb4.3.out IntMenge.cpp main.cpp
+ 1642  ./Ueb4.3.out 
+ 1643  g++ -o Ueb4.3.out IntMenge.cpp main.cpp
+ 1644  ./Ueb4.3.out 
+ 1645  ls
+ 1646  touch Ueb4.4.h
+ 1647  touch Ueb4.4.cpp
+ 1648  g++ -o Ueb4.4.out Ueb4.4.cpp
+ 1649  ./Ueb4.4.out 
+ 1650  g++ -o Ueb4.4.out Ueb4.4.cpp
+ 1651  ./Ueb4.4.out 
+ 1652  g++ -o Ueb4.4.out Ueb4.4.cpp
+ 1653  ./Ueb4.4.out 
+ 1654  cd
+ 1655  gnuradio-companion 
+ 1656  ls
+ 1657  cd Schreibtisch/
+ 1658  cd Studium/C++/Ueb5/
+ 1659  g++ -o Ueb5.2.out Ueb5.2.cpp
+ 1660  g++ -std=c11 -o Ueb5.2.out Ueb5.2.cpp
+ 1661  g++ -std=c++11 -o Ueb5.2.out Ueb5.2.cpp
+ 1662  ./Ueb5.2.out 
+ 1663  g++ -std=c++11 -o Ueb5.2.out Ueb5.2.cpp
+ 1664  ./Ueb5.2.out 
+ 1665  g++ -std=c++11 -o Ueb5.2.out Ueb5.2.cpp
+ 1666  ./Ueb5.2.out 
+ 1667  touch Ueb5.3.cpp
+ 1668  g++ -std=c++11 -o Ueb5.3.out Ueb5.3.cpp
+ 1669  ./Ueb5.3.out 
+ 1670  touch Ueb5.4.cpp
+ 1671  g++ -std=c++11 -o Ueb5.4.out Ueb5.4.cpp
+ 1672  ./Ueb5.4.out
+ 1673  g++ -std=c++11 -o Ueb5.4.out Ueb5.4.cpp
+ 1674  ./Ueb5.4.out
+ 1675  g++ -std=c++11 -o Ueb5.4.out Ueb5.4.cpp
+ 1676  ./Ueb5.4.out
+ 1677  g++ -std=c++11 -o Ueb5.4.out Ueb5.4.cpp
+ 1678  ./Ueb5.4.out
+ 1679  g++ -std=c++11 -o Ueb5.4.out Ueb5.4.cpp
+ 1680  ./Ueb5.4.out
+ 1681  g++ -std=c++11 -o Ueb5.4.out Ueb5.4.cpp
+ 1682  ./Ueb5.4.out
+ 1683  g++ -std=c++11 -o Ueb5.4.out Ueb5.4.cpp
+ 1684  g++  -o Ueb5.4.out Ueb5.4.cpp
+ 1685  ./Ueb5.4.out
+ 1686  touch Ueb5.5.cpp
+ 1687  g++  -o Ueb5.5.out Ueb5.5.cpp
+ 1688  ./Ueb5.5.out Ueb5.4.cpp test
+ 1689  g++  -o Ueb5.5.out Ueb5.5.cpp
+ 1690  ./Ueb5.5.out Ueb5.4.cpp test
+ 1691  g++  -o Ueb5.5.out Ueb5.5.cpp
+ 1692  ./Ueb5.5.out Ueb5.4.cpp test
+ 1693  g++  -o Ueb5.5.out Ueb5.5.cpp
+ 1694  ./Ueb5.5.out Ueb5.4.cpp test
+ 1695  g++  -o Ueb5.5.out Ueb5.5.cpp
+ 1696  ./Ueb5.5.out Ueb5.4.cpp test
+ 1697  touch Ueb5.6.cpp
+ 1698  ls
+ 1699  cd EttusN200/
+ 1700  ls
+ 1701  python SkylineCologne.py 
+ 1702  python SkylineCologneSignalLaufzeit
+ 1703  python SkylineCologneSignalLaufzeit.py 
+ 1704  python SkylineCologneSignalLaufzeit2.py 
+ 1705  python SkylineCologneButton2.py 
+ 1706  python SkylineCologneButton.py 
+ 1707  python SkylineCologne.py
+ 1708  python SkylineCologneButton2.py 
+ 1709  gnuradio-companion guiNachMartinsWunsch.grc
+ 1710  cd ..
+ 1711  ls
+ 1712  cd zea2git/
+ 1713  ls
+ 1714  git status
+ 1715  cd NMR/
+ 1716  ls
+ 1717  cd GnuradioKomponenten/
+ 1718  git status
+ 1719  cd ..
+ 1720  git status
+ 1721  ls
+ 1722  cd GnuradioKomponenten/
+ 1723  git pull
+ 1724  ls
+ 1725  cd mars_programm/
+ 1726  ls
+ 1727  cd gr-mars
+ 1728  ls
+ 1729  . build.sh
+ 1730  ls
+ 1731  cd ..
+ 1732  ls
+ 1733  cd ..
+ 1734  ls
+ 1735  gnuradio-companion gui_komponenten_test.grc 
+ 1736  git add gui_komponenten_test.grc 
+ 1737  git commit -m "Entry-Blöcke eingefügt und Sink, jedoch Ordnerstruktur an VM von Dominik Angepasst" gui_komponenten_test.grc 
+ 1738  git push
+ 1739  ls
+ 1740  +cd zea2git/NMR/GnuradioK
+ 1741  +cd zea2git/NMR/GnuradioKomponenten/
+ 1742  ls
+ 1743  cd zea2git/NMR/GnuradioKomponenten/
+ 1744  ls
+ 1745  cd mars_programm/
+ 1746  ls
+ 1747  gnuradio-companion  gui_komponenten_test.grc 
+ 1748  ls
+ 1749  cd Schreibtisch/
+ 1750  ls
+ 1751  cd Studium/C++/
+ 1752  cd Ueb5
+ 1753  g++ -o Ueb5.3.out Ueb5.3.cpp
+ 1754  ./Ueb5.3.out 
+ 1755  g++ -o Ueb5.3.out Ueb5.3.cpp
+ 1756  ./Ueb5.3.out 
+ 1757  g++ -o Ueb5.4.out Ueb5.4.cpp
+ 1758  ./Ueb5.4.out 
+ 1759  cd
+ 1760  cd zea2git/NMR/GnuradioKomponenten/mars_programm/
+ 1761  ls
+ 1762  gnuradio-companion gui_komponenten_test.grc 
+ 1763  ls
+ 1764  cd Schreibtisch/Studium/hoffmann/SE/
+ 1765  ls
+ 1766  java SudokuMain -h -r
+ 1767  java SudokuMain -h
+ 1768  javac SudokuMain.java 
+ 1769  java SudokuMain 
+ 1770  java SudokuMain -h
+ 1771  java SudokuMain -s
+ 1772  java SudokuMain -c5
+ 1773  java SudokuMain -c05
+ 1774  java SudokuMain -c5
+ 1775  javac SolverEasy.java 
+ 1776  javac Solver.java
+ 1777  javac ParseException.java 
+ 1778  javac Sudoku.java
+ 1779  javac SudokuMain.java 
+ 1780  java SudokuMain -c05
+ 1781  java SudokuMain -c5
+ 1782  javac SudokuMain.java 
+ 1783  java SudokuMain -c5
+ 1784  javac SudokuMain.java 
+ 1785  javac CreateP.java 
+ 1786  javac -classpath itext5-5.5.10/ CreateP.java 
+ 1787  javac -classpath itext5-5.5.10/itextpdf-5.5.10.jar CreateP.java 
+ 1788  javac Sudoku.java
+ 1789  javac -classpath itext5-5.5.10/itextpdf-5.5.10.jar CreateP.java 
+ 1790  javac -classpath itext5-5.5.10/itextpdf-5.5.10.jar CreateP.java Sudoku.java
+ 1791  javac SudokuMain.java 
+ 1792  javac SudokuMain.java CreateP.java
+ 1793  javac -classpath itext5-5.5.10/itextpdf-5.5.10.jar CreateP.java Sudoku.java SudokuMain.java
+ 1794  java SudokuMain 
+ 1795  cd itext5-5.5.10/
+ 1796  javac -classpath itextpdf-5.5.10.jar CreateP.java Sudoku.java SudokuMain.java
+ 1797  cd itext5-5.5.10/
+ 1798  java SudokuMain 
+ 1799  javac -classpath itextpdf-5.5.10.jar CreateP.java Sudoku.java SudokuMain.java
+ 1800  java SudokuMain 
+ 1801  java SudokuMain -classpath itextpdf-5.5.10.jar
+ 1802  javac -classpath itextpdf-5.5.10.jar CreateP.java Sudoku.java SudokuMain.java
+ 1803  java SudokuMain -classpath itextpdf-5.5.10.jar
+ 1804  java -classpath itextpdf-5.5.10.jar
+ 1805  java SudokuMain -cp itextpdf-5.5.10.jar::com
+ 1806  java SudokuMain -cp itextpdf-5.5.10.jar
+ 1807  java SudokuMain -cp itextpdf-5.5.10
+ 1808  javac -classpath itextpdf-5.5.10.jar:itextpdfa-5.5.10.jar CreateP.java Sudoku.java SudokuMain.java
+ 1809  javac -classpath itextpdf-5.5.10.jar:itext-pdfa-5.5.10.jar CreateP.java Sudoku.java SudokuMain.java
+ 1810  java SudokuMain -cp itextpdf-5.5.10.jar:itext-pdfa-5.5.10.jar
+ 1811  java SudokuMain -cp itext-pdfa-5.5.10.jar
+ 1812  javac -classpath itext-pdfa-5.5.10.jar CreateP.java Sudoku.java SudokuMain.java
+ 1813  javac -classpath itextpdf-5.5.10.jar:itext-pdfa-5.5.10.jar CreateP.java Sudoku.java SudokuMain.java
+ 1814  javac -cp \* CreateP.java Sudoku.java SudokuMain.java
+ 1815  java -cp \* SudokuMain
+ 1816  javac -cp \* CreateP.java Sudoku.java SudokuMain.java
+ 1817  java -cp \* SudokuMain
+ 1818  javac -cp \* CreateP.java Sudoku.java SudokuMain.java
+ 1819  java  SudokuMain
+ 1820  java -cp \* SudokuMain
+ 1821  java -cp \* SudokuMain -c5
+ 1822  java -cp \* SudokuMain -h
+ 1823  javac -cp \* SudokuMain.java
+ 1824  javac -cp \* SudokuMain.java CreateP.java Sudoku.java
+ 1825  java -cp \* SudokuMain -h
+ 1826  java -cp .:\* SudokuMain -h
+ 1827  java -cp .:\* SudokuMain -c5
+ 1828  java -cp .:\* SudokuMain -c10
+ 1829  javac -cp \* SudokuMain.java CreateP.java Sudoku.java
+ 1830  java -cp .:\* SudokuMain -c10
+ 1831  javac -cp \* SudokuMain.java CreateP.java Sudoku.java
+ 1832  java -cp .:\* SudokuMain -c10
+ 1833  javac -cp \* SudokuMain.java CreateP.java Sudoku.java
+ 1834  java -cp .:\* SudokuMain -c10
+ 1835  javac -cp \* SudokuMain.java CreateP.java Sudoku.java
+ 1836  java -cp .:\* SudokuMain -c10
+ 1837  java -cp .:\* SudokuMain -c10 -c10
+ 1838  cd ..
+ 1839  cd
+ 1840  cd Schreibtisch/
+ 1841  cd Studium/C++/
+ 1842  ls
+ 1843  cd Ueb6
+ 1844  ls
+ 1845  tocuh Ueb6.2.cpp
+ 1846  touch Ueb6.2.cpp
+ 1847  atom Ueb6.2.cpp 
+ 1848  ls
+ 1849  touch Teilnehmer.cpp
+ 1850  touch Teilnehmer.h
+ 1851  g++ -o Ueb6.2.out Ueb6.2.cpp Teilnehmer.cpp
+ 1852  ./Ueb6.2.out 
+ 1853  g++ -o Ueb6.2.out Ueb6.2.cpp Teilnehmer.cpp
+ 1854  ./Ueb6.2.out 
+ 1855  g++ -o Ueb6.2.out Ueb6.2.cpp Teilnehmer.cpp
+ 1856  ./Ueb6.2.out 
+ 1857  g++ -o Ueb6.2.out Ueb6.2.cpp Teilnehmer.cpp
+ 1858  ./Ueb6.2.out 
+ 1859  g++ -o Ueb6.2.out Ueb6.2.cpp Teilnehmer.cpp
+ 1860  ./Ueb6.2.out 
+ 1861  g++ -o Ueb6.2.out Ueb6.2.cpp Teilnehmer.cpp
+ 1862  ./Ueb6.2.out 
+ 1863  g++ -o Ueb6.2.out Ueb6.2.cpp Teilnehmer.cpp
+ 1864  ./Ueb6.2.out 
+ 1865  g++ -o Ueb6.2.out Ueb6.2.cpp Teilnehmer.cpp
+ 1866  ./Ueb6.2.out 
+ 1867  g++ -o Ueb6.2.out Ueb6.2.cpp Teilnehmer.cpp
+ 1868  ./Ueb6.2.out 
+ 1869  g++ -o Ueb6.2.out Ueb6.2.cpp Teilnehmer.cpp
+ 1870  ./Ueb6.2.out 
+ 1871  cd Schreibtisch/Studium/C++/Ueb6/
+ 1872  ls
+ 1873  atom meinstringMain.cpp 
+ 1874  ls
+ 1875  cd zea2git/NMR/
+ 1876  ls
+ 1877  cd GnuradioKomponenten/
+ 1878  ls
+ 1879  cd mars_programm/
+ 1880  ls
+ 1881  gnuradio-companion gui_komponenten_test.grc 
+ 1882  git add gui_komponenten_test.grc 
+ 1883  git commit -m "Erweiterung der Gui um Graph mit Trigger" gui_komponenten_test.grc 
+ 1884  git push
+ 1885  gnuradio-companion gui_komponenten_test.grc 
+ 1886  ls
+ 1887  cd EttusN200/
+ 1888  ls
+ 1889  gnuradio-companion guiNachMartinsWunsch.grc 
+ 1890  ls
+ 1891  cd gr-modules
+ 1892  ls
+ 1893  gnuradio-companion GuiTestGRC.grc 
+ 1894  gnuradio-companion plot.grc 
+ 1895  ls
+ 1896  cd EttusN200/
+ 1897  ls
+ 1898  ls *.grc
+ 1899  gnuradio-companion  test.grc
+ 1900  ls
+ 1901  ls ./*.grc
+ 1902  ls ./*/*.grc
+ 1903  cd gr-module-aufgeraeumt/
+ 1904  ls *grc
+ 1905  gnuradio-companion  GuiTestGRC.grc 
+ 1906  ls
+ 1907  cd zea2git/
+ 1908  ls
+ 1909  cd NMR/GnuradioKomponenten/
+ 1910  ls
+ 1911  cd mars_programm/
+ 1912  ls
+ 1913  gnuradio-companion gui_komponenten_test.grc 
+ 1914  cd zea2git/NMR/GnuradioKomponenten/mars_programm/
+ 1915  ls
+ 1916  ls /home/dominik/zea2git/NMR/GnuradioKomponenten/mars_programm/file_sink.data
+ 1917  cd zea2git/NMR/GnuradioKomponenten/
+ 1918  cd mars_programm/
+ 1919  ls
+ 1920  gnuradio-companion gui_komponenten_test.grc 
+ 1921  touch file_sink.data
+ 1922  gnuradio-companion gui_komponenten_test.grc 
+ 1923  ls
+ 1924  cd Schreibtisch/Studium/C++/Ueb7/
+ 1925  g++ -o Ueb3.4.out Ueb3.4.cpp 
+ 1926  ./Ueb3.4.out 
+ 1927  g++ -o Ueb3.4.out Ueb3.4.cpp 
+ 1928  ./Ueb3.4.out 
+ 1929  g++ -o Ueb3.4.out Ueb3.4.cpp 
+ 1930  ./Ueb3.4.out 
+ 1931  g++ -o Ueb3.4.out Ueb3.4.cpp 
+ 1932  ./Ueb3.4.out 
+ 1933  g++ -o Ueb3.4.out Ueb3.4.cpp 
+ 1934  ./Ueb3.4.out 
+ 1935  g++ -o Ueb3.4.out Ueb3.4.cpp 
+ 1936  ./Ueb3.4.out 
+ 1937  g++ -o Ueb3.4.out Ueb3.4.cpp 
+ 1938  ./Ueb3.4.out 
+ 1939  g++ -o Ueb3.4.out Ueb3.4.cpp 
+ 1940  ./Ueb3.4.out 
+ 1941  g++ -o Ueb3.4.out Ueb3.4.cpp 
+ 1942  ./Ueb3.4.out 
+ 1943  g++ -o Ueb3.4.out Ueb3.4.cpp 
+ 1944  ./Ueb3.4.out 
+ 1945  g++ -o Ueb3.4.out Ueb3.4.cpp 
+ 1946  ./Ueb3.4.out 
+ 1947  g++ -o Ueb3.4.out Ueb3.4.cpp 
+ 1948  ./Ueb3.4.out 
+ 1949  g++ -o Ueb3.4.out Ueb3.4.cpp 
+ 1950  ./Ueb3.4.out 
+ 1951  g++ -o Ueb3.4.out Ueb3.4.cpp 
+ 1952  ./Ueb3.4.out 
+ 1953  g++ -o Ueb3.4.out Ueb3.4.cpp 
+ 1954  ./Ueb3.4.out 
+ 1955  g++ -o Ueb3.4.out Ueb3.4.cpp 
+ 1956  ./Ueb3.4.out 
+ 1957  g++ -o Ueb3.4.out Ueb3.4.cpp 
+ 1958  ./Ueb3.4.out 
+ 1959  g++ -o Ueb3.4.out Ueb3.4.cpp 
+ 1960  ./Ueb3.4.out 
+ 1961  g++ -o Ueb3.4.out Ueb3.4.cpp 
+ 1962  ./Ueb3.4.out 
+ 1963  g++ -o Ueb3.4.out Ueb3.4.cpp 
+ 1964  ./Ueb3.4.out 
+ 1965  g++ -o Ueb3.4.out Ueb3.4.cpp 
+ 1966  ./Ueb3.4.out 
+ 1967  g++ -o Ueb3.4.out Ueb3.4.cpp 
+ 1968  ./Ueb3.4.out 
+ 1969  g++ -o Ueb3.4.out Ueb3.4.cpp 
+ 1970  ./Ueb3.4.out 
+ 1971  g++ -o Ueb3.4.out Ueb3.4.cpp 
+ 1972  ./Ueb3.4.out 
+ 1973  g++ -o Ueb3.4.out Ueb3.4.cpp 
+ 1974  ./Ueb3.4.out 
+ 1975  g++ -o Ueb3.4.out Ueb3.4.cpp 
+ 1976  ./Ueb3.4.out 
+ 1977  g++ -o Ueb3.4.out Ueb3.4.cpp 
+ 1978  ./Ueb3.4.out 
+ 1979  g++ -o Ueb3.4.out Ueb3.4.cpp 
+ 1980  ./Ueb3.4.out 
+ 1981  g++ -o Ueb3.4.out Ueb3.4.cpp 
+ 1982  ./Ueb3.4.out 
+ 1983  g++ -o Ueb3.4.out Ueb3.4.cpp 
+ 1984  ./Ueb3.4.out 
+ 1985  g++ -o Ueb3.4.out Ueb3.4.cpp 
+ 1986  ./Ueb3.4.out 
+ 1987  g++ -o Ueb3.4.out Ueb3.4.cpp 
+ 1988  ./Ueb3.4.out 
+ 1989  g++ -o Ueb3.4.out Ueb3.4.cpp 
+ 1990  ./Ueb3.4.out 
+ 1991  touch TreeElement.cpp
+ 1992  touch TreeElement.h
+ 1993  g++ -o Ueb3.4.out Ueb3.4.cpp 
+ 1994  g++ -o aufgabe_4.5.out aufgabe_4.5.cpp 
+ 1995  ./aufgabe_4.5.out 
+ 1996  g++ -g -o aufgabe_4.5.out aufgabe_4.5.cpp 
+ 1997  nemiver ./aufgabe_4.5.out
+ 1998  cd Schreibtisch/
+ 1999  ls
+ 2000  atom top_block.py
+ 2001  ls
+ 2002  cd Schreibtisch/Studium/hoffmann/SE/Sudoku/
+ 2003* lsd
+ 2004  javac -cp \* SudokuMain.java CreateP.java Sudoku.java
+ 2005  java SudokuMain 
+ 2006  history | more
+ 2007  history | more > test.dat

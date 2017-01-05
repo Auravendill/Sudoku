@@ -1,0 +1,34 @@
+Sudoku - Hilfe
+
+Beim Aufruf des Programms ueber die Kommandozeile ist es moeglich,
+verschiedene Optionen anzugeben.
+Dementsprechend veraendert sich der Programmablauf.
+Die Reihenfolge ist dabei egal.
+Wichtig ist aber, dass die Optionen jeweils korrekt angegeben werden.
+Sonst startet das Programm nicht.
+
+Die Optionen lauten wie folgt:
+
+-cxx                Anzahl der Sudokus, die erstellt werden sollen.
+                    Gueltig sind ganze Zahlen zwischen 1 und 10.
+
+-lx                 Angabe der Schwierigkeitsstufe.
+                    Gueltig sind ganze Zahlen zwischen 1 und 3.
+
+-o<Speicherort>     Optionale Angabe des Speicherortes.
+                    Wird nichts angegeben, werden die Sudokus im den Pfad gelegt,
+                    in dem sich auf die Programmdatei befindet.
+
+-h                  Die Hilfe wird auf dem Bildschirm angezeigt.
+                    Es findet keine Programmausfuehrung statt.
+                    Aber das wussten sie ja schon, sonst waeren sie ja nicht hier:)
+
+-s                  Die Sudoku-Regeln werden auf dem Bildschirm angezeigt.
+                    Es findet keine Programmausfuehrung statt.
+
+-d[<Druckername>]   Diese Option bewirkt das ausdrucken der Sudokus auf Papier.
+                    Dabei ist der Name des Druckers optional.
+                    Wird kein Name angegeben, wird der Standarddrucker ausgewaehlt.
+
+-f                  Das Ergebnis wird als beschreibbares Formular abgespeichert.
+                    Weiterhin findet ein Speichervorgang im read-only-pdf-Format statt.

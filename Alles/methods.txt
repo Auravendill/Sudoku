@@ -1,0 +1,4 @@
+methods
+
+substring					ownString.substring(int beginIndex)						(includes the starting position)
+string_to_int			Integer.parseInt(onwString)
